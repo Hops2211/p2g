@@ -234,7 +234,7 @@ h2{
   color: #000; 
 	background: #9932cc;
   position: absolute;
-height: 100%;
+  height: 100%;
   width: 50%;
   margin-left: -50%;
   
@@ -291,8 +291,6 @@ height: 100%;
 }
 
 
-
-
 nav a:hover { 
   background: #9400d3; 
   color: #c0c0c0; 
@@ -343,14 +341,34 @@ input {
 #menuToggle{
   display: none;
 }
-footer, 
-figure{
+footer{
   background: #9932cc;
   box-sizing: border-box;
   display: block;
   line-height: 2.4em;
 
 }
+
+/* menu specific */
+#menu{
+  border: solid #696969;
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  background: #fffff0;
+  /* darker ivory cornsilk #fff8dc */
+}
+
+figcaption{
+  text-align: center;
+   line-height: 2.4em;
+}
+#meal1,
+#meal2,
+#meal3{
+  margin-left: 14.80%; /* mid grid 40.1875, 1/8 mid grid + padding 6.336em/42.8125 */
+    width: 70.40%; /* 6/8 of mid grid 40.1875 x 0.75 = 30.1406em/42.8125 */ 
+  }
+}
+
 @media screen and (min-width: 41.75em) {
 
 }
