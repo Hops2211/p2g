@@ -208,7 +208,7 @@ video{
 }
   
 h2{
-  padding-top:1.20em;
+  padding-top:0;
   font-size: 1.80em;
   line-height: 2.16em;
   text-align: center;
@@ -216,22 +216,37 @@ h2{
   
 }
 
-.navigation {
-  color: #000;
-/*	height: 100%; */
+#page{
+  padding: 1.235em 0.75em;
+}
+
+.menu-icon {
+	padding: 10px 20px;
+	cursor: pointer;
+	float: right;
+	margin: 0.5px 0.5px 0.5px 0; 
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+
+}
+
+#navigation {
+  color: #000; 
 	background: #9932cc;
   position: absolute;
-  width: 100%; 
-/* margin-left: -50%; */
-  display: inline-block;
+height: 100%;
+  width: 50%;
+  margin-left: -50%;
+  
 }
+
 
 .navigation li,
 .navigation li:last-child {
   display: inline-block;
   padding: 0;
   border-bottom: 0.02em solid #fff;
-/*  width:100%; */
+  width:100%; 
 }
 
 
@@ -241,7 +256,42 @@ h2{
   padding: 1.29em;
   color: #000;
   text-align: center;  
+
 }
+
+
+/* navigation transition */
+.hasjs #navigation{
+  margin-left: -50%; 
+}
+
+
+.has-toolbar body {
+  overflow-x: hidden;
+}
+
+.has-toolbar #page{
+  transition: margin-left 1s;
+  margin-left: 50%;
+}
+
+.no-toolbar #page{
+  transition: margin-left 1s;
+}
+
+.has-toolbar #navigation {
+  padding-left: 1.2em;
+  margin-left: 0%;
+  transition: margin-left 1s;
+  width: 45%;
+}
+
+.no-toolbar #navigation {
+  transition: margin-left 1s;
+}
+
+
+
 
 nav a:hover { 
   background: #9400d3; 
@@ -249,12 +299,21 @@ nav a:hover {
 }
 
 
-#logo{
-  display: inline-block;
-  width: 4.8em;
-  height: 4.8em;
-  float: left;
-  padding-left:0.75em;
+#logo{  
+  display: none;
+}
+
+/* contact form */
+
+label,
+input {
+  box-sizing: border-box;  
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0.778em; /*14px @ 18px */
+  width: 100%;
 }
 
 /* icons */
@@ -279,4 +338,56 @@ nav a:hover {
   
 }
 
+/* order form */
+#address,
+#menuToggle{
+  display: none;
+}
+footer, 
+figure{
+  background: #9932cc;
+  box-sizing: border-box;
+  display: block;
+  line-height: 2.4em;
+
+}
+@media screen and (min-width: 41.75em) {
+
+}
+
+/* 820px */
+@media screen and (min-width: 51.25em) {
+  
+    .navigation li a {
+    display: inline-block;
+
+  }
+  
+  .navigation li,
+  .navigation li:last-child {
+    border: 0;
+    display: inline;
+  }
+  
+    .hasjs #navigation {
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    position: static;
+    line-height: 2.3em;
+    height: 4.9em;
+  }
+  
+  .menu-icon {
+    display: none; 
+  }
+  
+  #logo{
+    display: block;
+    display: inline-block;
+    width: 4.8em;
+    height: 4.8em;
+    float: left;
+    padding-left:0.75em;
+  }
 }
