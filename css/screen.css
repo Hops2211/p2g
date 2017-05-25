@@ -201,7 +201,7 @@ video{
 
 #banner {
   width: 100%;
-  background-image: url(/img/food.jpg);
+  background-image: url(../img/food.jpg);
   height: 200px;
   background-color: blue;
   background-position: center;
@@ -220,6 +220,14 @@ h2{
   padding: 1.235em 0.75em;
 }
 
+#mainimage{
+  margin-left: 25%;
+  width: 50%;
+ /* display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+ */
+}
 .menu-icon {
 	padding: 10px 20px;
 	cursor: pointer;
@@ -301,10 +309,11 @@ nav a:hover {
   display: none;
 }
 
-/* contact form */
+/* forms */
 
 label,
-input {
+input, 
+select {
   box-sizing: border-box;  
   display: block;
   font-family: inherit;
@@ -312,6 +321,10 @@ input {
   line-height: inherit;
   padding: 0.778em; /*14px @ 18px */
   width: 100%;
+}
+
+#m6{
+  width: 10%;
 }
 
 /* icons */
@@ -337,17 +350,18 @@ input {
 }
 
 /* order form */
-#address,
+#address-input,
 #menuToggle{
   display: none;
 }
+
 footer{
   background: #9932cc;
   box-sizing: border-box;
   display: block;
   line-height: 2.4em;
-
 }
+
 
 /* menu specific */
 #menu{
@@ -361,14 +375,32 @@ figcaption{
   text-align: center;
    line-height: 2.4em;
 }
+
 #meal1,
 #meal2,
 #meal3{
   margin-left: 14.80%; /* mid grid 40.1875, 1/8 mid grid + padding 6.336em/42.8125 */
-    width: 70.40%; /* 6/8 of mid grid 40.1875 x 0.75 = 30.1406em/42.8125 */ 
+  width: 70.40%; /* 6/8 of mid grid 40.1875 x 0.75 = 30.1406em/42.8125 */ 
   }
 }
 
+/* 450 px */
+@media screen and (min-width: 28.125em) {
+  #meal1,
+  #meal2,
+  #meal3{
+    line-height: 0.5em;
+  }
+}
+
+/* 600px */
+@media screen and (min-width: 37.5em) {
+  #menu{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+}
 @media screen and (min-width: 41.75em) {
 
 }
@@ -407,5 +439,16 @@ figcaption{
     height: 4.8em;
     float: left;
     padding-left:0.75em;
+  }
+}
+
+/* 940px */
+@media screen and (min-width: 58.75em) {
+ #menu{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  h2{
+    font-size: 55.204px;
   }
 }
