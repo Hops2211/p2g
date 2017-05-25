@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="/css/screen.css" />    
+  <link rel="stylesheet" media="screen" href="../css/screen.css" />    
   <title>Prep'd 2 Go</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
       </figure>
       <ul class="navigation">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../">Menu</a></li>
+        <li><a href="../menu">Menu</a></li>
         <li><a href="../order">Order</a></li>
         <li><a href="../gallery">Gallery</a></li>
         <li><a href="../contact">Contact Us</a></li>
@@ -55,51 +55,130 @@
               <label for="delivery">Delivery</label>
                 <div>
                   <label for="deliveryy">Yes 
-                    <input type="checkbox" id="deliveryy" name="deliveryy" value="Yes" />
+                    <input type="checkbox" class="radio" value="1" id="deliveryy" name="deliveryy" value="Yes" />
                   </label>
-                  <li id="fname-input">
+                  <li id="address-input">
                     <label id="address" for="address">Address</label>
                     <input type="text" name="address" id="address" placeholder="7583 Lincoln Ave" pattern="[A-Za-z\\s]*"/>
                   </li>
                 </div>
                 <div>
                   <label for="deliveryn">No 
-                    <input type="checkbox" id="deliveryn" name="deliveryn" value="No" />
+                    <input type="checkbox" class="radio" value="1" id="deliveryn" name="deliveryn" value="No" />
                   </label>
                 </div>
             </li>
+        </form>
             <li>
-              <form id="meal-form" name="meal-form" method="get" action="#null">
-                <select id="meals">
-                  <option value="select#">Select Number of Meals</option>
-                  <option value="5m">5 Meals</option>
-                  <option value="6m">6 Meals</option>
-                  <option value="7m">7 Meals</option>
-                  <option value="8m">8 Meals</option>
-                  <option value="9m">9 Meals</option>
-                  <option value="10m">10 Meals</option>
+              <form id="meal-form-help" name="meal-form" method="get" action="#null">
+                <select id="meals" name="#meals">
+                  <option value="-1">Select Number of Meals</option>
+                  <option value="5">5 Meals</option>
+                  <option value="6">6 Meals</option>
+                  <option value="7">7 Meals</option>
+                  <option value="8">8 Meals</option>
+                  <option value="9">9 Meals</option>
+                  <option value="10">10 Meals</option>
                 </select>
-                <input type="submit" id="meal-form-submit" name="meal-form-submit" value="Purchase" />
               </form>
             </li>
             <li>
               <section id="meal-selection">
-                <ul id="6meals">
-                  <li> Meal 1: <form id="meal-select-form" name="meal-select-form" method="get" action="#null">
-                  <select id="meals">
-                    <option value="select#">Select Meal</option>
-                    <option value="cheesesteak">Low Car Philly Cheesesteak</option>
-                    <option value="chickenbowl">Southwest Chicken Bowl</option>
-                    <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
-                  </select>
-                <input type="submit" id="meal-form-submit" name="meal-form-submit" value="Purchase" />
-              </form></li>
-                  <li> Meal 2: </li>
-                  <li> Meal 3: </li>
-                  <li> Meal 4: </li>
-                  <li> Meal 5: </li>
-                  <li> Meal 6: </li>
-                </ul>
+              <form id="meal-select" name="meal-form" method="get" action="#null">
+                <ul id="6meals" >
+                  <li style="visibility:hidden">
+                  <label id="m1" for="m1">Meal 1: </label>
+                  <select id="meal1">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden">
+                  <label id="m2" for="m2">Meal 2: </label>
+                  <select id="meal2">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden">
+                  <label id="m3" for="m3">Meal 3: </label>
+                  <select id="meal3">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden"> 
+                  <label id="m4" for="m4">Meal 4: </label>
+                  <select id="meal4">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden">
+                  <label id="m5" for="m5">Meal 5: </label>
+                    <select id="meal5">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden">
+                  <label id="m6" for="m6">Meal 6: </label>
+                  <select id="meal6">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden"> 
+                  <label id="m7" for="m7">Meal 7: </label>
+                  <select id="meal7">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden">
+                  <label id="m8" for="m8">Meal 8: </label>
+                  <select id="meal8">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden">
+                  <label id="m9" for="m9">Meal 9: </label>
+                    <select id="meal9">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+                  <li style="visibility:hidden">
+                  <label id="m10" for="m10">Meal 10: </label>                  
+                  <select id="meal10">
+                      <option value="select#">Select Meal</option>
+                      <option value="cheesesteak">Low Car Philly Cheesesteak</option>
+                      <option value="chickenbowl">Southwest Chicken Bowl</option>
+                      <option value="blackend-tilapia">Blackened Tilapia w/Garlic rice & veggies</option>
+                    </select>
+                  </li>
+              
+              </ul>
+              </form>
               </section>
             </li>
             <li>
@@ -133,7 +212,8 @@
         <img src="../img/twitter-icon.ico" alt="twitter" /> 
       </a>
     </figure>
-  </footer>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </footer>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../js/site.js"></script>
 </body>
 </html>
