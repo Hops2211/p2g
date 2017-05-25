@@ -364,6 +364,9 @@ footer{
 
 
 /* menu specific */
+#menu-details{
+  text-align: center;
+}
 #menu{
   border: solid #696969;
   border-radius: 0.6em 0.6em 0.6em 0.6em;
