@@ -201,7 +201,7 @@ jQuery(function($) {
   //end meal select
   
   //--------Check for delivery---------------------------------
-  $('#information').on('click', function(e) {
+  $('#order-information').on('click', function(e) {
     e.preventDefault();
     yesCheck();
     
@@ -252,30 +252,30 @@ jQuery(function($) {
  //------end of navigation menu-------------------------------------
 
  //--------------- slideshow for gallery --------------------------
-  var slideIndex = 1;
-showDivs(slideIndex);
+  // var slideIndex = 1;
+// showDivs(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
+// function plusDivs(n) {
+    // showDivs(slideIndex += n);
+// }
 
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
-}
+// function showDivs(n) {
+    // var i;
+    // var x = document.getElementsByClassName("mySlides");
+    // if (n > x.length) {slideIndex = 1} 
+    // if (n < 1) {slideIndex = x.length} ;
+    // for (i = 0; i < x.length; i++) {
+        // x[i].style.display = "none"; 
+    // }
+    // x[slideIndex-1].style.display = "block"; 
+// }
  //---------------- end of slideshow ---------------------
  
  $('#information').on('submit', function(e) {
     e.preventDefault();
     var name = $('#name').val();
     var email = $('#email').val();
-    
+    console.log('pshed');
     $('#contact').append('Thank you '+name+'. A confirmation email will be sent to you shortly');
  });
 
