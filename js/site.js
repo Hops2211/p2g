@@ -12,14 +12,9 @@ jQuery(function($) {
     function clearOld() {
     //JS won't complain if we try remove a class that
     //doesn't exist on the object
-    $('#6meals').removeClass('6meals-select');
-    $('#7meals').removeClass('7meals-select');
-    $('#8meals').removeClass('8meals-select');
-    $('#9meals').removeClass('9meals-select');
-    $('#10meals').removeClass('10meals-select');
   }
 
-   $('#meal-form-help').on('change', function(e) {
+   $('meal-form-help').on('change', function(e) {
    var choice = $('#meals').val();
    console.log(choice);
    
@@ -167,36 +162,6 @@ jQuery(function($) {
    }
    });
   
-  
-  
-  $('#meal-form').on('submit', function(e) {
-    e.preventDefault();
-    var choice = $('#meals').val();
-    $('html').removeClass('no-select');
-    clearOld();
-    console.log('hi');
-    console.log(choice);
-
-    if (choice == '6m') {
-      $('#html').addClass('6meals-select');
-      console.log(choice);
-    }
-    else if (choice == '7m') {
-      $('#7meals').addClass('7meals-select');
-    }
-    else if (choice == '8m') {
-      $('#8meals').addClass('8meals-select');
-    }
-    else if (choice == '9m') {
-      $('#9meals').addClass('9meals-select');
-    }
-    else if (choice == '10') {
-      $('#10meals').addClass('10meals-select');
-    }
-    else {
-      alert("This message should not appear. If it does, contact us through github.");
-    }
-  });
   
   //end meal select
   
