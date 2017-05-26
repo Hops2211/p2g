@@ -387,6 +387,22 @@ figcaption{
   }
 }
 
+/* slideshow */
+#meal1pic,
+#meal2pic,
+#meal3pic{
+  margin-left: 14.80%; /* mid grid 40.1875, 1/8 mid grid + padding 6.336em/42.8125 */
+  width: 70.40%;
+  position: absolute;
+}
+#slideshow,
+.mySlides{
+  margin-left: 25.20%; /* mid grid 40.1875, 1/8 mid grid + padding 6.336em/42.8125 */
+  width: 50%;
+
+
+}
+
 /* 450 px */
 @media screen and (min-width: 28.125em) {
   #meal1,
