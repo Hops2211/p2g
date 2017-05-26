@@ -26,18 +26,18 @@ jQuery(function($) {
    
     if (choice == '5'){
      console.log('option1');
-     document.getElementById('meal1').style.visibility = 'visible';
-     document.getElementById('m1').style.visibility = 'visible';
-     document.getElementById('meal2').style.visibility = 'visible';
-     document.getElementById('m2').style.visibility = 'visible';
-     document.getElementById('meal3').style.visibility = 'visible';
-     document.getElementById('m3').style.visibility = 'visible';
-     document.getElementById('meal4').style.visibility = 'visible';
-     document.getElementById('m4').style.visibility = 'visible';
-     document.getElementById('meal5').style.visibility = 'visible';
-     document.getElementById('m5').style.visibility = 'visible';
-     document.getElementById('meal6').style.visibility = 'visible'; 
-     document.getElementById('m6').style.visibility = 'visible';     
+     document.getElementById('meal1').style.visibility = 'hidden';
+     document.getElementById('m1').style.visibility = 'hidden';
+     document.getElementById('meal2').style.visibility = 'hidden';
+     document.getElementById('m2').style.visibility = 'hidden';
+     document.getElementById('meal3').style.visibility = 'hidden';
+     document.getElementById('m3').style.visibility = 'hidden';
+     document.getElementById('meal4').style.visibility = 'hidden';
+     document.getElementById('m4').style.visibility = 'hidden';
+     document.getElementById('meal5').style.visibility = 'hidden';
+     document.getElementById('m5').style.visibility = 'hidden';
+     document.getElementById('meal6').style.visibility = 'hidden'; 
+     document.getElementById('m6').style.visibility = 'hidden';     
      document.getElementById('meal7').style.visibility = 'hidden';
      document.getElementById('m7').style.visibility = 'hidden';
      document.getElementById('meal8').style.visibility = 'hidden';
@@ -251,4 +251,19 @@ jQuery(function($) {
     });
  //------end of navigation menu-------------------------------------
 
+ 
+  var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 }); 
