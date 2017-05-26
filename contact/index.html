@@ -37,8 +37,13 @@
       <h2>Contact Us</h2>
       <section id="contact"> 
       
-        <form id="information" name="information" method="post" action="https://formspree.io/rjohns42@hawk.iit.edu">
+        <form id="information" name="information" method="post" >
           <ol>
+            <li id="subjectline">
+              <input type="hidden" name="_subject" value="Website contact" />
+            </li>
+            <li id="subjectline">
+              <input type="text" name="_gotcha" style="display:none" />            </li>
             <li id="fname-input">
               <label for="fname">Name</label>
               <input type="text" name="name" id="name" placeholder="Jane Doe" pattern="[A-Za-z\\s]*"/>
@@ -60,6 +65,11 @@
             </li>
           </ol>
         </form>
+        
+        <script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'rjohns42' + '@' + 'hawk' + '.' + 'iit'+ '.' + 'edu');
+</script>
 
       </section>
     </section>
