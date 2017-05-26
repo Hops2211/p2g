@@ -251,19 +251,32 @@ jQuery(function($) {
     });
  //------end of navigation menu-------------------------------------
 
- 
-  var slideIndex = 0;
-carousel();
+ //--------------- slideshow for gallery --------------------------
+  var slideIndex = 1;
+showDivs(slideIndex);
 
-function carousel() {
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
+        x[i].style.display = "none"; 
     }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+ //---------------- end of slideshow ---------------------
+ 
+ $('#information').on('submit', function(e) {
+    e.preventDefault();
+    var name = $('#name').val();
+    var email = $('#email').val();
+    
+    $('#contact').append('Thank you '+name+'. A confirmation email will be sent to you shortly');
+ });
+
 }); 
