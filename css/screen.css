@@ -313,7 +313,8 @@ nav a:hover {
 
 label,
 input, 
-select {
+select,
+textarea {
   box-sizing: border-box;  
   display: block;
   font-family: inherit;
