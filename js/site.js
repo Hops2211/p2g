@@ -40,7 +40,10 @@ jQuery(function($) {
      document.getElementById('meal9').style.visibility = 'hidden';
      document.getElementById('m9').style.visibility = 'hidden';
      document.getElementById('meal10').style.visibility = 'hidden';    
-     document.getElementById('m10').style.visibility = 'hidden';       
+     document.getElementById('m10').style.visibility = 'hidden';   
+     
+     var orderinfo =  document.getElementById('#meals');
+    orderinfo.setAttribute('value', choice);
 
    }
    
@@ -65,7 +68,10 @@ jQuery(function($) {
      document.getElementById('meal9').style.visibility = 'hidden';
      document.getElementById('m9').style.visibility = 'hidden';
      document.getElementById('meal10').style.visibility = 'hidden';    
-     document.getElementById('m10').style.visibility = 'hidden';     
+     document.getElementById('m10').style.visibility = 'hidden';  
+
+var orderinfo =  document.getElementById('#meals');
+    orderinfo.setAttribute('value', choice);     
 
    }
    else if (choice == '7'){
@@ -89,7 +95,10 @@ jQuery(function($) {
      document.getElementById('meal9').style.visibility = 'hidden';
      document.getElementById('m9').style.visibility = 'hidden';
      document.getElementById('meal10').style.visibility = 'hidden';    
-     document.getElementById('m10').style.visibility = 'hidden';  
+     document.getElementById('m10').style.visibility = 'hidden'; 
+
+var orderinfo =  document.getElementById('#meals');
+    orderinfo.setAttribute('value', choice);     
    }
    else if (choice == '8'){
      console.log('option3');
@@ -113,6 +122,9 @@ jQuery(function($) {
      document.getElementById('m9').style.visibility = 'hidden';
      document.getElementById('meal10').style.visibility = 'hidden';    
      document.getElementById('m10').style.visibility = 'hidden';
+     
+     var orderinfo =  document.getElementById('#meals');
+    orderinfo.setAttribute('value', choice);
    }
    else if (choice == '9'){
      console.log('option3');
@@ -136,6 +148,9 @@ jQuery(function($) {
      document.getElementById('m9').style.visibility = 'visible';
      document.getElementById('meal10').style.visibility = 'hidden';    
      document.getElementById('m10').style.visibility = 'hidden';  
+     
+     var orderinfo =  document.getElementById('#meals');
+    orderinfo.setAttribute('value', choice);
    }
    else if (choice == '10'){
      console.log('option3');
@@ -158,7 +173,10 @@ jQuery(function($) {
      document.getElementById('meal9').style.visibility = 'visible';
      document.getElementById('m9').style.visibility = 'visible';
      document.getElementById('meal10').style.visibility = 'visible';    
-     document.getElementById('m10').style.visibility = 'visible';  
+     document.getElementById('m10').style.visibility = 'visible'; 
+
+var orderinfo =  document.getElementById('#meals');
+    orderinfo.setAttribute('value', choice);     
    }
    });
   
