@@ -7,8 +7,8 @@ jQuery(function($) {
   $('html').addClass('hasjs');
   $('html').addClass('no-toolbar');
   
-  var orderinfo =  document.getElementById('meal-1');
-    orderinfo.setAttribute('value', '3');
+  var meal =  document.getElementById('meal-1');
+    meal.setAttribute('value', '3');
     
   //meal select
     function clearOld() {
