@@ -14,10 +14,10 @@ jQuery(function($) {
     //doesn't exist on the object
   }
 
-   $('meal-form-help').on('change', function(e) {
+   $('#meal-form-help').on('change', function(e) {
    var choice = $('#meals').val();
    console.log(choice);
-   
+   console.log('hi');
    
     if (choice == '5'){
      console.log('option1');
@@ -174,10 +174,12 @@ jQuery(function($) {
   
   function yesCheck() {
     if (document.getElementById('deliveryy').checked) {
-        document.getElementById('address-input').style.display = 'block';
+        document.getElementById('address-label').style.display = 'block';
+        document.getElementById('address').style.display = 'block';
     }
     else if(document.getElementById('deliveryn').checked) {
-          document.getElementById('address-input').style.display = 'none';
+        document.getElementById('address-label').style.display = 'none';
+        document.getElementById('address').style.display = 'none';
     }
   }
   
