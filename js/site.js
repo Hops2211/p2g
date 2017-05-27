@@ -7,7 +7,9 @@ jQuery(function($) {
   $('html').addClass('hasjs');
   $('html').addClass('no-toolbar');
   
-  
+  var orderinfo =  document.getElementById('meal-1');
+    orderinfo.setAttribute('value', '3');
+    
   //meal select
     function clearOld() {
     //JS won't complain if we try remove a class that
@@ -175,7 +177,7 @@ var orderinfo =  document.getElementById('#meals');
      document.getElementById('meal10').style.visibility = 'visible';    
      document.getElementById('m10').style.visibility = 'visible'; 
 
-var orderinfo =  document.getElementById('#meals');
+    var orderinfo =  document.getElementById('#meals');
     orderinfo.setAttribute('value', choice);     
    }
    });
