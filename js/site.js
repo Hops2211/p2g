@@ -7,6 +7,7 @@ jQuery(function($) {
   $('html').addClass('hasjs');
   $('html').addClass('no-toolbar');
   
+  
     
   //meal select
     function clearOld() {
