@@ -185,15 +185,15 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal1').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-1');
-    orderinfo.setAttribute('value', choice); 
+   var meal =  document.getElementById('meal-1');
+    meal.setAttribute('value', choice); 
   });
   
   $('#meal2').on('change', function(e) {
    var choice = $('#meal2').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-2');
+   var orderinfo =  document.getElementById('meal-2');
     orderinfo.setAttribute('value', choice); 
   });
   
@@ -201,7 +201,7 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal3').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-3');
+   var orderinfo =  document.getElementById('meal-3');
     orderinfo.setAttribute('value', choice); 
   });
   
@@ -209,7 +209,7 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal4').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-4');
+   var orderinfo =  document.getElementById('meal-4');
     orderinfo.setAttribute('value', choice); 
   });
   
@@ -217,7 +217,7 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal5').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-5');
+   var orderinfo =  document.getElementById('meal-5');
     orderinfo.setAttribute('value', choice); 
   });
   
@@ -225,7 +225,7 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal6').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-6');
+   var orderinfo =  document.getElementById('meal-6');
     orderinfo.setAttribute('value', choice); 
   });
   
@@ -233,7 +233,7 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal7').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-7');
+   var orderinfo =  document.getElementById('meal-7');
     orderinfo.setAttribute('value', choice); 
   });
   
@@ -241,7 +241,7 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal8').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-8');
+   var orderinfo =  document.getElementById('meal-8');
     orderinfo.setAttribute('value', choice); 
   });
   
@@ -249,7 +249,15 @@ var orderinfo =  document.getElementById('#meals');
    var choice = $('#meal9').val();
    console.log(choice);
    console.log('meal 6 changed');
-   var orderinfo =  document.getElementById('#meal-9');
+   var orderinfo =  document.getElementById('meal-9');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal10').on('change', function(e) {
+   var choice = $('#meal10').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('meal-10');
     orderinfo.setAttribute('value', choice); 
   });
    
