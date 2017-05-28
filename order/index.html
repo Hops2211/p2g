@@ -37,7 +37,7 @@
       <h2>Order</h2>
       <section id="order"> 
       
-        <form method="POST" action="http://formspree.io/rjohns42@hawk.iit.edu">
+        <form method="POST" action="http://formspree.io/rjohns42@hawk.iit.edu" id="order-information">
           <ol>
             <li id="subjectline">
               <input type="hidden" name="_subject" value="Order Form" />
@@ -104,10 +104,8 @@
             <li>
               <input type="submit" name="submit" id="submit" value="Submit" />
             </li>
-          </ol>
-        </form> 
+          </ol> 
   
-              <form id="meal-form-help" name="meal-form" method="get" action="#null">
                 <select id="meals" name="#meals">
                   <option value="-1">Select Number of Meals</option>
                   <option value="5">5 Meals</option>
@@ -117,11 +115,8 @@
                   <option value="9">9 Meals</option>
                   <option value="10">10 Meals</option>
                 </select>
-              </form>
-              
-           <form id="meal-select" name="meal-form" method="get" action="#null">
    
-              <ol>
+                <ol>
                   <li style="visibility:hidden">
                   <label id="m1">Meal 1: </label>
                    <select name="meal-1" id="meal1">
