@@ -39,6 +39,12 @@
       
         <form method="POST" action="http://formspree.io/rjohns42@hawk.iit.edu" id="order-information">
           <ol>
+            <li id="subjectline">
+              <input type="hidden" name="_subject" value="Order Form" />
+            </li>
+            <li id="gotchaline">
+              <input type="text" name="_gotcha" style="display:none" />
+            </li>
             <li id="fname-input">
               <label for="fname">Name</label>
               <input type="text" name="name" id="name" placeholder="Jane Doe" />
@@ -51,17 +57,7 @@
               <label for="phone">Phone Number</label>
               <input type="tel" name="phone" id="phone" placeholder="734-777-8888" />
             </li>
-            <li id="message-input">
-              <label for="delivery">Delivery</label>
-                  <label for="deliveryy">Yes 
-                    <input type="checkbox" class="radio" value="1" id="deliveryy" name="delivery-yes" value="Yes" />
-                  </label>
-                    <label id="address-label" for="address">Address</label>
-                    <input type="text" name="address" id="address" placeholder="7583 Lincoln Ave" />
-                  <label for="deliveryn">No 
-                    <input type="checkbox" class="radio" value="1" id="deliveryn" name="delivery-no" value="No" />
-                  </label>
-            </li>
+      
             <li>
               <input type="hidden" id="#meals" name="#meals" />
             </li>
