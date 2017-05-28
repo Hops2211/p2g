@@ -192,6 +192,12 @@ var orderinfo =  document.getElementById('#meals');
     
   });
   
+  $('#deliveryn').on('click', function(e) {
+    e.preventDefault();
+    yesCheck();
+    
+  });
+  
   function yesCheck() {
     if (document.getElementById('deliveryy').checked) {
         document.getElementById('address-label').style.display = 'block';
