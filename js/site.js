@@ -15,7 +15,7 @@ jQuery(function($) {
     //doesn't exist on the object
   }
 
-   $('#meal-form-help').on('change', function(e) {
+   $('#meals').on('change', function(e) {
    var choice = $('#meals').val();
    console.log(choice);
    console.log('hi');
@@ -265,7 +265,7 @@ var orderinfo =  document.getElementById('#meals');
   //end meal select
   
   //--------Check for delivery---------------------------------
-  $('#order-information').on('click', function(e) {
+  $('#deliveryy').on('click', function(e) {
     e.preventDefault();
     yesCheck();
     
