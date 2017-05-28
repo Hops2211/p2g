@@ -71,36 +71,7 @@
             <li>
               <input type="hidden" id="#meals" name="#meals" />
             </li>
-            <li>
-              <input type="hidden" id="meal-1" name="meal-1"/>
-            </li>
-            <li>
-              <input type="hidden" id="meal-2" name="meal-2"/>
-            </li>
-            <li >
-              <input type="hidden" id="meal-3" name="meal-3"/>
-            </li>
-            <li>
-              <input type="hidden" id="meal-4" name="meal-4"/>
-            </li>
-            <li >
-              <input type="hidden" id="meal-5" name="meal-5"/>
-            </li>
-            <li>
-              <input type="hidden" id="meal-6" name="meal-6"/>
-            </li>
-            <li>
-              <input type="hidden" id="meal-7" name="meal-7"/>
-            </li>
-            <li>
-              <input type="hidden" id="meal-8" name="meal-8"/>
-            </li>
-            <li>
-              <input type="hidden" id="meal-9" name="meal-9"/>
-            </li>
-            <li>
-              <input type="hidden" id="meal-10" name="meal-10"/>
-            </li>         
+            
             <li>
               <input type="submit" name="submit" id="submit" value="Submit" />
             </li>
@@ -142,7 +113,7 @@
                   </li>
                   <li style="visibility:hidden">
                   <label id="m3">Meal 3: </label>
-                  <select id="meal3">
+                  <select name="meal-3" id="meal3">
                       <option value="select#">Select Meal</option>
                       <option value="cheesesteak">Low Car Philly Cheesesteak</option>
                       <option value="chickenbowl">Southwest Chicken Bowl</option>
@@ -151,7 +122,7 @@
                   </li>
                   <li style="visibility:hidden"> 
                   <label id="m4">Meal 4: </label>
-                  <select id="meal4">
+                  <select name="meal-4" id="meal4">
                       <option value="select#">Select Meal</option>
                       <option value="cheesesteak">Low Car Philly Cheesesteak</option>
                       <option value="chickenbowl">Southwest Chicken Bowl</option>
@@ -160,7 +131,7 @@
                   </li>
                   <li style="visibility:hidden">
                   <label id="m5">Meal 5: </label>
-                    <select id="meal5">
+                    <select name="meal-5" id="meal5">
                       <option value="select#">Select Meal</option>
                       <option value="cheesesteak">Low Car Philly Cheesesteak</option>
                       <option value="chickenbowl">Southwest Chicken Bowl</option>
@@ -169,7 +140,7 @@
                   </li>
                   <li style="visibility:hidden">
                   <label id="m6">Meal 6: </label>
-                  <select id="meal6">
+                  <select name="meal-6" id="meal6">
                       <option value="select#">Select Meal</option>
                       <option value="cheesesteak">Low Car Philly Cheesesteak</option>
                       <option value="chickenbowl">Southwest Chicken Bowl</option>
@@ -221,11 +192,7 @@
                 <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;" alt="paypal">
               </a>
           
-          <script>
-    var orderinfo =  document.getElementById('order-information');
-    orderinfo.setAttribute('action', 'http://formspree.io/' + 'rjohns42' + '@' + 'hawk' + '.' + 'iit'+ '.' + 'edu');
-    
-    </script>
+          
 
       </section>
     </section>
