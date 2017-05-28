@@ -7,8 +7,6 @@ jQuery(function($) {
   $('html').addClass('hasjs');
   $('html').addClass('no-toolbar');
   
-  var meal =  document.getElementById('meal-1');
-    meal.setAttribute('value', '3');
     
   //meal select
     function clearOld() {
@@ -182,6 +180,78 @@ var orderinfo =  document.getElementById('#meals');
    }
    });
   
+  $('#meal1').on('change', function(e) {
+   var choice = $('#meal1').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-1');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal2').on('change', function(e) {
+   var choice = $('#meal2').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-2');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal3').on('change', function(e) {
+   var choice = $('#meal3').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-3');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal4').on('change', function(e) {
+   var choice = $('#meal4').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-4');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal5').on('change', function(e) {
+   var choice = $('#meal5').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-5');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal6').on('change', function(e) {
+   var choice = $('#meal6').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-6');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal7').on('change', function(e) {
+   var choice = $('#meal7').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-7');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal8').on('change', function(e) {
+   var choice = $('#meal8').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-8');
+    orderinfo.setAttribute('value', choice); 
+  });
+  
+  $('#meal9').on('change', function(e) {
+   var choice = $('#meal9').val();
+   console.log(choice);
+   console.log('meal 6 changed');
+   var orderinfo =  document.getElementById('#meal-9');
+    orderinfo.setAttribute('value', choice); 
+  });
+   
   
   //end meal select
   
