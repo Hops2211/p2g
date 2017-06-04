@@ -15,7 +15,7 @@ jQuery(function($) {
     //doesn't exist on the object
   }
 
-   $('#meals').on('change', function(e) {
+   $('#os0').on('change', function(e) {
    var choice = $('#os0').val();
    console.log(choice);
    console.log('hi');
