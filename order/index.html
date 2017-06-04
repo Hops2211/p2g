@@ -44,7 +44,9 @@
       <h2>Order</h2>
       <section id="order"> 
       
-        <form method="POST" action="http://formspree.io/rjohns42@hawk.iit.edu">
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <!-- <form method="POST" action="http://formspree.io/rjohns42@hawk.iit.edu"> -->
+        <input type="hidden" name="hosted_button_id" value="7TCBHR8QDP88Y">
           <ol>
             <li id="subjectline">
               <input type="hidden" name="_subject" value="Order Form" />
@@ -80,12 +82,12 @@
   
                 <select id="meals" name="#meals">
                   <option value="-1">Select Number of Meals</option>
-                  <option value="5">5 Meals</option>
-                  <option value="6">6 Meals</option>
-                  <option value="7">7 Meals</option>
-                  <option value="8">8 Meals</option>
-                  <option value="9">9 Meals</option>
-                  <option value="10">10 Meals</option>
+                  <option value="5">5 Meals $60.00 USD</option>
+                  <option value="6">6 Meals $66.00 USD</option>
+                  <option value="7">7 Meals $70.00 USD</option>
+                  <option value="8">8 Meals $80.00 USD</option>
+                  <option value="9">9 Meals $90.00 USD</option>
+                  <option value="10">10 Meals $100.00 USD</option>
                 </select>
    
                 <ol>
@@ -188,30 +190,14 @@
             
             
             
-              </form>
-               <!--    <input type="submit" name="submit" id="submit" /> -->
-              <a  id="checkout" href="https://www.facebook.com/RaivenRashaan">
-                <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;" alt="paypal">
-              </a>
-
-              
-              
-<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
-<input type="hidden" name="cmd" value="_cart">
-<input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="payments@yoursite.com">
-<input type="hidden" name="item_name" value="Baseball Hat">
-<input type="hidden" name="item_number" value="123">
-<input type="hidden" name="amount" value="5.95">
-<input type="hidden" name="shipping" value="1.00">
-<input type="hidden" name="shipping2" value="0.50">
-<input type="hidden" name="handling" value="2.00 ">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="return" value="http://www.yoursite.com/thankyou.htm">
-<input type="hidden" name="undefined_quantity" value="1">
-<input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+              <input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+
+              
+             
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
