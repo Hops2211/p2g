@@ -16,11 +16,11 @@ jQuery(function($) {
   }
 
    $('#meals').on('change', function(e) {
-   var choice = $('#meals').val();
+   var choice = $('#os0').val();
    console.log(choice);
    console.log('hi');
    
-    if (choice == '5'){
+    if (choice == '5 Meals'){
      console.log('option1');
      document.getElementById('meal1').style.visibility = 'hidden';
      document.getElementById('m1').style.visibility = 'hidden';
@@ -48,7 +48,7 @@ jQuery(function($) {
 
    }
    
-   if (choice == '6'){
+   if (choice == '6 Meals'){
      console.log('option1');
      document.getElementById('meal1').style.visibility = 'visible';
      document.getElementById('m1').style.visibility = 'visible';
@@ -75,7 +75,7 @@ var orderinfo =  document.getElementById('#meals');
     orderinfo.setAttribute('value', choice);     
 
    }
-   else if (choice == '7'){
+   else if (choice == '7 Meals'){
      console.log('option2');
      document.getElementById('meal1').style.visibility = 'visible';
      document.getElementById('m1').style.visibility = 'visible';
@@ -101,7 +101,7 @@ var orderinfo =  document.getElementById('#meals');
 var orderinfo =  document.getElementById('#meals');
     orderinfo.setAttribute('value', choice);     
    }
-   else if (choice == '8'){
+   else if (choice == '8 Meals'){
      console.log('option3');
      document.getElementById('meal1').style.visibility = 'visible';
      document.getElementById('m1').style.visibility = 'visible';
@@ -127,7 +127,7 @@ var orderinfo =  document.getElementById('#meals');
      var orderinfo =  document.getElementById('#meals');
     orderinfo.setAttribute('value', choice);
    }
-   else if (choice == '9'){
+   else if (choice == '9 Meals'){
      console.log('option3');
      document.getElementById('meal1').style.visibility = 'visible';
      document.getElementById('m1').style.visibility = 'visible';
@@ -153,7 +153,7 @@ var orderinfo =  document.getElementById('#meals');
      var orderinfo =  document.getElementById('#meals');
     orderinfo.setAttribute('value', choice);
    }
-   else if (choice == '10'){
+   else if (choice == '10 Meals'){
      console.log('option3');
      document.getElementById('meal1').style.visibility = 'visible';
      document.getElementById('m1').style.visibility = 'visible';
@@ -228,7 +228,7 @@ var orderinfo =  document.getElementById('#meals');
 //------end delivery check-------------------------------------
 
 //---------pull out menu for navigation---------------------------
-    $('#menuToggle').on('click', function(e) {
+ /*   $('#menuToggle').on('click', function(e) {
     // Don't follow the #tools-jump link:
     e.preventDefault();
     // prevent event bubbling; without this
@@ -242,6 +242,33 @@ var orderinfo =  document.getElementById('#meals');
   //    $('html').toggleClass('no-toolbar');
     });
     });
+ */   
+    $('#hto').on('click', function(e) {
+    // Don't follow the #tools-jump link:
+    e.preventDefault();
+    // prevent event bubbling; without this
+    // line, inner click event, on #content,
+    // will fire immediately:
+    e.stopPropagation();
+    $('html').toggleClass('hto');
+    console.log('clicked!');
+    });
+    
+    
+    $("#menuToggle").click(function(){
+        $("#navigation").slideToggle("slow");
+        
+     $('html').toggleClass('has-toolbar');
+     
+
+     $('#page').on('click', function(e) {
+      $('html').removeClass('has-toolbar');
+    });
+
+    });
+
+    
+    
  //------end of navigation menu-------------------------------------
 
  //--------------- slideshow for gallery --------------------------
