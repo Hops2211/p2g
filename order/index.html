@@ -17,8 +17,15 @@
         <img src="/img/p2glogo.png" alt="logo" />
       </figure>
       <ul class="navigation">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../menu">Menu</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="../menu">Weekly Menu</a></li>
+        <li id="hto"><a href="">How to Order</a>
+          <ul>
+            <li><a href="../instructions">Instructions</a></li>
+            <li><a href="../pricing">Meal Prep Pricing</a></li>
+            <li><a href="../catering">Private Catering Prices</a></li>
+          </ul>
+        </li>
         <li><a href="../order">Order</a></li>
         <li><a href="../gallery">Gallery</a></li>
         <li><a href="../contact">Contact Us</a></li>
@@ -179,13 +186,57 @@
               <input type="submit" name="submit" id="submit" value="Submit" />
             </li>
             
+            
+            
               </form>
                <!--    <input type="submit" name="submit" id="submit" /> -->
               <a  id="checkout" href="https://www.facebook.com/RaivenRashaan">
                 <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;" alt="paypal">
               </a>
+
+              
+              
+<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="business" value="payments@yoursite.com">
+<input type="hidden" name="item_name" value="Baseball Hat">
+<input type="hidden" name="item_number" value="123">
+<input type="hidden" name="amount" value="5.95">
+<input type="hidden" name="shipping" value="1.00">
+<input type="hidden" name="shipping2" value="0.50">
+<input type="hidden" name="handling" value="2.00 ">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="http://www.yoursite.com/thankyou.htm">
+<input type="hidden" name="undefined_quantity" value="1">
+<input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
           
           
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="7TCBHR8QDP88Y">
+<table>
+<tr><td><input type="hidden" name="on0" value="shirtd">shirtd</td></tr><tr><td><select name="os0">
+	<option value="Option 1">Option 1 $1.00 USD</option>
+	<option value="Option 2">Option 2 $3.00 USD</option>
+	<option value="Option 3">Option 3 $5.50 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
 
       </section>
     </section>
