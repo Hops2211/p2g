@@ -5,7 +5,8 @@ jQuery(function($) {
 
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
-  $('html').addClass('no-toolbar');
+  
+
   
   
     
@@ -254,6 +255,38 @@ var orderinfo =  document.getElementById('#meals');
     console.log('clicked!');
     });
     
+    $('#ins').on('click', function(e) {
+    // Don't follow the #tools-jump link:
+    e.preventDefault();
+    // prevent event bubbling; without this
+    // line, inner click event, on #content,
+    // will fire immediately:
+    e.stopPropagation();
+
+    window.location.replace('../instructions');
+    });
+    
+    $('#cat').on('click', function(e) {
+    // Don't follow the #tools-jump link:
+    e.preventDefault();
+    // prevent event bubbling; without this
+    // line, inner click event, on #content,
+    // will fire immediately:
+    e.stopPropagation();
+
+    window.location.replace('../catering');
+    });
+    
+    $('#price').on('click', function(e) {
+    // Don't follow the #tools-jump link:
+    e.preventDefault();
+    // prevent event bubbling; without this
+    // line, inner click event, on #content,
+    // will fire immediately:
+    e.stopPropagation();
+
+    window.location.replace('../pricing');
+    });
     
     $("#menuToggle").click(function(){
         $("#navigation").slideToggle("slow");
@@ -266,6 +299,8 @@ var orderinfo =  document.getElementById('#meals');
     });
 
     });
+    
+    
 
     
     
