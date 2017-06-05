@@ -499,6 +499,9 @@ figcaption{
 /* 866px */
 @media screen and (min-width: 54.125em) {
   
+  #navigation{
+    display: block;
+  }
     .navigation li a {
     display: inline-block;
 
@@ -517,6 +520,7 @@ figcaption{
     position: static;
     line-height: 2.3em;
     height: 4.9em;
+    display: block;
   }
   
   li:hover ul {
