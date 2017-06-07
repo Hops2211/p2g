@@ -51,7 +51,7 @@ jQuery(function($) {
    
    if (choice == '6 Meals'){
      console.log('option1');
-     document.getElementById('meal1').style.visibility = 'visible';
+     document.getElementById('meal1').style.display = 'visible';
      document.getElementById('m1').style.visibility = 'visible';
      document.getElementById('meal2').style.visibility = 'visible';
      document.getElementById('m2').style.visibility = 'visible';

@@ -397,6 +397,10 @@ footer{
   line-height: 2.4em;
 }
 
+#meal1{
+  visibility: hidden;
+}
+
 
 /* menu specific */
 #menu-details{
