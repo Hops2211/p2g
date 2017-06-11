@@ -44,7 +44,7 @@
       <h2>Order</h2>
       <section id="order"> 
       
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <form id="orderform" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <!-- <form method="POST" action="http://formspree.io/rjohns42@hawk.iit.edu"> -->
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="7TCBHR8QDP88Y">
@@ -80,9 +80,8 @@
             </li>
              
           </ol> 
-      </form>
+
       
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="956Z6SEGX6B3E">
 <table>
@@ -103,9 +102,9 @@
     <td>
     <select name="os1" id="meal1" >
                       <option value="select#">Select Meal</option>
-                      <option value="cajun-shrimp">Cajun Shrimp with Veggies over Rice</option>
-                      <option value="garlic-chicken">Honey Garlic Chicken</option>
-                      <option value="baked-chicken">Baked Chicken with Ranch Red Potatoes</option>
+                      <option value="teriyaki-chicken">Teriyaki chicken stir fry</option>
+                      <option value="meat-loaf">Meat loaf</option>
+                      <option value="smothered-chicken">Smothered chicken</option>
                     </select></td>
   </tr>
   
@@ -218,8 +217,9 @@
   </tr>
 </table>
 <input type="hidden" name="currency_code" value="USD">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input id="a2c" type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_addtocart_96x21.png" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="submit" name="submit" id="submit" value="Submit" />
+
 </form>
 
 
