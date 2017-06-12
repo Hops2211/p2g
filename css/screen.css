@@ -237,6 +237,22 @@ h2{
   background-size: contain;
 
 }
+#a2c img{
+  left: 0;
+  width: 5%;
+  
+}
+#.mySlides{
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;t;
+    background-size: cover; */
+}
 
 #navigation {
   color: #000; 
@@ -303,12 +319,13 @@ h2{
   transition: margin-left 1s;
 }
 */
+
 ul {
     padding: 0;
     margin: 0;
 }
 
-li {
+ul li {
     display: inline;
     position: relative;
 }
@@ -403,6 +420,10 @@ footer{
 }
 */
 
+
+#pricing-details {
+  text-align: center;
+}
 /* menu specific */
 #menu-details{
   text-align: center;
