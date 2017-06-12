@@ -400,6 +400,9 @@ textarea {
   
 }
 
+p{
+  padding-bottom: 1.20em;
+}
 /* order form */
 #address-label,
 #address,
