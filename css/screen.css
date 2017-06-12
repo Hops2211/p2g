@@ -403,6 +403,10 @@ textarea {
 p{
   padding-bottom: 1.20em;
 }
+
+li:last-child {
+  padding-bottom: 1.20em;
+}
 /* order form */
 #address-label,
 #address,
