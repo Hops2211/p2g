@@ -212,6 +212,9 @@ h2{
   
 }
 
+#banner{
+  width: 100%;
+}
 #page{
   padding: 1.235em 0.75em;
 }
@@ -420,6 +423,14 @@ footer{
   box-sizing: border-box;
   display: block;
   line-height: 2.4em;
+  position: relative;
+   bottom: 0px;
+   width: 100%;
+  
+}
+
+main{
+  height: 100%;
 }
 
 /*
