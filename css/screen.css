@@ -219,6 +219,10 @@ h2{
   padding: 1.235em 0.75em;
 }
 
+#aboutsec{
+  text-align: center;
+}
+
 .has-toolbar #page{
   visibility: hidden;
 }
@@ -379,6 +383,10 @@ textarea {
 
 #m6{
   width: 10%;
+}
+
+#picture{
+  width: 100%;
 }
 
 /* icons */
@@ -593,6 +601,10 @@ figcaption{
     float: left;
     padding-left:0.75em;
   }
+}
+
+#picture{
+  width: 15%;
 }
 
 /* 940px */
