@@ -385,10 +385,6 @@ textarea {
   width: 10%;
 }
 
-#picture{
-  width: 100%;
-}
-
 /* icons */
 
 .icon img {
@@ -601,10 +597,6 @@ figcaption{
     float: left;
     padding-left:0.75em;
   }
-}
-
-#picture{
-  width: 15%;
 }
 
 /* 940px */
