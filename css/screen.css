@@ -509,12 +509,23 @@ figcaption{
 
 }
 
+/* 300 px */
+@media screen and (min-width: 18.75em) {
+  #picture{
+    width: 80%;
+  }
+}
+
 /* 450 px */
 @media screen and (min-width: 28.125em) {
   #meal1,
   #meal2,
   #meal3{
     line-height: 0.5em;
+  }
+  
+  #picture{
+    width: 60%;
   }
 }
 
@@ -523,6 +534,10 @@ figcaption{
   #menu{
     margin-left: 10%;
     margin-right: 10%;
+  }
+  
+  #picture{
+    width: 40%;
   }
 
 }
@@ -597,6 +612,10 @@ figcaption{
     float: left;
     padding-left:0.75em;
   }
+  
+  #picture{
+  width: 30%;
+  }
 }
 
 /* 940px */
@@ -607,5 +626,13 @@ figcaption{
   }
   h2{
     font-size: 55.204px;
+  }
+}
+
+/* 1000px */
+@media screen and (min-width: 62.5em) {
+  
+ #picture{
+  width: 20%;
   }
 }
