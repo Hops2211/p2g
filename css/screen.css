@@ -299,6 +299,10 @@ h2{
 
 }
 
+.has-toolbar #foot{
+  visibility: hidden;
+}
+
 
 /* navigation transition */
 
