@@ -235,14 +235,20 @@ h2{
   justify-content: center;
  */
 }
+
 .menu-icon {
-	padding: 10px 20px;
+  top: 20px;
+	padding: 12px 20px;
 	cursor: pointer;
 	float: right;
 	margin: 0.5px 0.5px 0.5px 0; 
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
   background-size: contain;
 
+}
+
+#cp_widget_579125da-0730-4367-a66c-740179fe50a6{
+  overflow: hidden;
 }
 #a2c img{
   left: 0;
